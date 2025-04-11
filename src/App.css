@@ -1,0 +1,179 @@
+/* border */
+.border-primary {
+    border: 2px solid var(--primary-color) !important;
+}
+
+.border-left-primary {
+    border-left: 3px solid var(--primary-color) !important;
+}
+
+.border-top-primary {
+    border-top: 7px solid var(--primary-color) !important;
+}
+
+
+/* bg colors */
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+
+.bg-yellow {
+    background-color: var(--bright-yellow-color) !important;
+}
+
+.bg-normal-gray {
+    background-color: var(--normal-gray-color) !important;
+}
+
+.bg-light-normal-gray {
+    background-color: var(--light-normal-gray-color) !important;
+}
+
+.bg-dark-blue-gray {
+    background-color: var(--dark-blue-gray-color) !important;
+}
+
+.bg-light-gray {
+    background-color: var(--light-gray-color);
+}
+
+.bg-red {
+    background-color: var(--bloody-red-color) !important;
+}
+
+.bg-leafy-green {
+    background-color: var(--leafy-green-color) !important;
+}
+
+.bg-yellow-green {
+    background-color: var(--yellow-green-color) !important;
+}
+
+/* colors */
+.color-red {
+    color: var(--bloody-red-color) !important;
+}
+
+.color-light-normal-gray {
+    color: var(--light-normal-gray-color) !important;
+}
+
+.color-primary {
+    color: var(--primary-color) !important;
+}
+
+.color-yellow {
+    color: var(--bright-yellow-color) !important;
+}
+
+.color-normal-gray {
+    color: var(--normal-gray-color) !important;
+}
+
+.color-dark-blue-gray {
+    color: var(--dark-blue-gray-color) !important;
+}
+
+.color-dark-gray {
+    color: var(--dark-gray-color) !important;
+}
+
+/* other */
+.extra-sm-text {
+    font-size: 12px;
+}
+
+.small-text {
+    font-size: 14px;
+}
+
+.normal-text {
+    font-size: 15px;
+}
+
+.big-normal-text {
+    font-size: 17px;
+}
+
+.icon-sm {
+    width: 15px;
+}
+
+.extra-sm-icon {
+    width: 11px !important;
+}
+
+.regular-btn {
+    min-width: 7rem;
+    padding: 10px 30px !important;
+}
+
+.regular-btn:hover {
+    opacity: 0.8;
+}
+
+.listing-owner img {
+    width: 20px !important;
+}
+
+/* fa icons */
+.fa-icon {
+    font-size: 10px;
+}
+
+
+
+/* media queries */
+@media screen and (max-width: 620px) {
+    .carousel-container {
+        overflow: hidden !important;
+        min-height: max-content;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .carousel-container {
+        overflow: hidden !important;
+
+        height: 120vh !important;
+    }
+}
+
+/* for stats on contact form */
+@media (min-width: 576px) {
+    .w-sm-100 {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .useful-links .nav .nav-item {
+        padding: 20px !important;
+        margin: 0px !important;
+        border-top: 2px dashed var(--dark-gray-color) !important;
+    }
+
+    .useful-links .nav .nav-item:last-child {
+        border-bottom: 2px dashed var(--dark-gray-color) !important;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* other */
+.regular-btn {
+    padding: 13px 30px !important;
+}
+
+.regular-btn:hover {
+    opacity: 0.85;
+}

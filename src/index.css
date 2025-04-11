@@ -1,0 +1,489 @@
+/* Roboto and Roboto Condensed */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=Roboto+Condensed:wght@100..900&display=swap');
+
+
+:root {
+    --primary-color: #30a1f3;
+    --light-gray-color : #f7f8fa;
+    --light-normal-gray-color: rgba(238, 241, 243, 255);
+    --normal-gray-color: #d6d9db;
+    --dark-gray-color: #67747e;
+    --dark-blue-gray-color: #2a3741;
+    --bright-yellow-color: #f6d23d;
+    --bloody-red-color: rgb(255, 93, 93);
+    --leafy-green-color: rgb(102, 187, 106);
+    --yellow-green-color: #8bc34a;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f8fa;
+}
+
+body,
+input,
+textarea,
+button,
+select {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto Condensed";
+}
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    max-width: 1300px !important;
+    margin: auto !important;
+}
+
+.nav-item {
+    font-size: 15px !important;
+    color: #4d4d4d;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item:hover > a {
+    color: var(--primary-color) !important;
+    cursor: pointer;
+}
+
+
+.nav-action-btns button {
+    max-width: 195px !important;
+    padding: 10px 25px !important;
+    gap: 12px !important;
+    font-size: 1.1vw;
+}
+
+.nav-action-btns button:hover {
+    background-color: var(--primary-color);
+    color: white !important;
+    opacity: 0.8;
+}
+
+/* drop down */
+.customDropdown .dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    display: flex;
+}
+.customDropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 99%;
+    min-width: 200px !important;
+    font-size: 14px !important;
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-item {
+    padding: 15px !important;
+    color: var(--dark-blue-gray-color) !important;
+}
+.dropdown-item:hover{
+    background-color: var(--light-normal-gray-color) !important;
+}
+
+/* nested dropdown */
+.nested-dropdown-menu{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    min-width: 200px !important;
+    font-size: 14px !important;
+    transform: translate(calc(100% - 2px), -50%);
+    background-color: white !important;
+    transition: opacity 0.3s ease !important;
+}
+.nested-dropdown-link:hover .nested-dropdown-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* floating buttons */
+.floating-btns{
+    position: fixed;
+    z-index: 50 !important;
+    bottom: 30px !important;
+    right: 30px !important;
+}
+.floating-btns button{
+    height: 60px !important;
+    width: 230px !important;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/* offcanvas */
+.nav-offcanvas {
+    width: 290px !important;
+}
+
+.offcanvas-body {
+    height: 90px !important;
+}
+
+.social-links a {
+    border: 1px solid rgb(236, 236, 236) !important;
+    color: rgb(54, 54, 54) !important;
+    height: 45px !important;
+    width: 45px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.social-links a:hover {
+    color: var(--bright-yellow-color) !important;
+    border-color: var(--bright-yellow-color) !important;
+}
+
+/* search listing */
+.search-listing-section button {
+    height: 40px;
+    width: 7rem !important;
+    transition: height 0.1s ease-in-out;
+    font-weight: 500 !important;
+}
+
+.search-listing-section .filter-btn:hover {
+    height: 45px !important;
+}
+
+.search-listing-form {
+    padding: 30px !important;
+}
+
+.active-btn {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    height: 45px !important;
+}
+
+.search-listing-select .dropdown-content{
+    z-index: 40 !important;
+}
+
+
+/* carousel */
+
+.carousel-item {
+    transition: transform 0.25s ease-in-out !important;
+}
+
+.carousel-container {
+    width: 100% !important;
+    position: relative;
+}
+.carousel-data-overlay > div{
+    max-width: 1000px !important;
+}
+
+.carousel-data-overlay {
+    position: relative;
+    padding: 100px 0px !important;
+    width: 100% !important;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+}
+.carousel-hero{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 100%;
+}
+
+.carousel-hero .carousel-inner {
+    width: 100% !important;
+    height: 100%;
+}
+
+.carousel-container .carousel-data-overlay h1 {
+    font-size: 48px !important;
+}
+
+.carousel-container .carousel-data-overlay p {
+    font-size: 22px !important;
+    line-height: 32px !important;
+}
+
+.carousel-hero .carousel-item {
+    height: 100% !important;
+    /* position: relative; */
+    animation: scale-up 5.18s ease-in-out infinite;
+}
+
+
+/* property picks ------------------------------------ */
+.custom-container {
+    max-width: 1300px;
+    padding: 30px 25px !important;
+}
+
+.property-pick-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px !important;
+    justify-content: center;
+    grid-auto-flow: row;
+}
+
+/* swiper */
+.swiper-btn,
+.swiper-btn:hover,
+.swiper-btn:active {
+    background-color: var(--bright-yellow-color) !important;
+    color: black !important;
+    border: 0px !important;
+    height: 50px !important;
+    width: 50px !important;
+}
+
+.swiper-button-disabled {
+    background-color: var(--normal-gray-color) !important;
+}
+
+/* card -------------------------------------------------*/
+.card {
+    cursor: pointer;
+}
+
+.card-icon {
+    text-decoration: none;
+    border: 1px solid var(--normal-gray-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-blue-gray-color);
+    border-radius: 50% !important;
+    font-size: 14px;
+    height: 32px;
+    width: 32px;
+    transition: color 0.15s ease-in, border 0.15s ease-in;
+    z-index: 10;
+}
+.card-icon:hover {
+    color: var(--primary-color) !important;
+    border-color:var(--primary-color) !important;
+}
+
+.custom-container>.card {
+    max-width: 300px;
+}
+
+.card img:not(.avatar-img) {
+    height: 100%;
+    width: 100%;
+    scale: 1.06;
+    transition: scale 0.15s ease-in-out;
+}
+
+.card:hover img {
+    scale: 1;
+}
+
+/* carousel indicators */
+.carousel-indicators{
+    display: flex;
+    align-items: center;
+}
+.card-carousel-control-btn,
+.carousel-indicators button {
+    opacity: 0;
+    visibility: hidden;
+    background-color: white !important;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.carousel-indicators button.active {
+    width: 5px !important;
+    height: 5px !important;
+    border-radius: 50% !important;
+    border: 2px solid white !important;
+    background-color: var(--primary-color) !important;
+}
+.carousel-indicators button {
+    width: 3px !important;
+    border-radius: 50% !important;
+    border: 2px solid white !important;
+}
+.card:hover .carousel-indicators button,
+.card:hover .card-carousel-control-btn {
+    visibility: visible !important;
+    opacity: 1;
+}
+
+.card-carousel-control-btn {
+    width: 0px;
+    height: 35px;
+    margin: auto !important;
+    transition: width 0.15s ease;
+}
+.card:hover .card-carousel-control-btn{
+    width: 32px !important;
+}
+
+
+
+/* contact us section ----------------------------------------------- */
+.contact-us-section {
+    position: relative;
+    max-width: 100vw !important;
+    background-image: url('bg-imgs/big-2.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contact-us-section::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.contact-us-section> .row {
+    margin: auto !important;
+    max-width: 1300px !important;
+    padding: 100px 5px !important;
+    position: relative;
+    z-index: 10;
+}
+
+.contact-us-section>.row>.contact-form {
+    max-width: 530px !important;
+}
+
+textarea {
+    resize: none;
+}
+
+/* area cards */
+.all-areas {
+    margin-left: -9px !important;
+    margin-right: -9px !important;
+    width: calc(100% + 18px) !important;
+}
+
+.area-card-overlay {
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 0px;
+    height: 100% !important;
+}
+
+.all-areas .col .card {
+    height: 280px !important;
+}
+
+/* premium property picks section 2 */
+.listing-controls .filter-btns button:not(.active-filter-btn):hover {
+    color: var(--primary-color) !important;
+    background-color: var(--light-gray-color);
+
+}
+
+.active-filter-btn {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+}
+
+/* advisor section */
+.email:hover,
+.contact-num:hover {
+    color: var(--primary-color) !important;
+    transition: color 0.15s ease-in;
+}
+
+
+/* testinomial section */
+.testinomial-section .card h3.card-title{
+    font-size: 50px !important;
+}
+
+.testinomial-section img {
+    width: 45px !important;
+    height: 45px !important;
+}
+
+
+.testinomial-section .appostrophy-icon {
+    transform: translateY(-65%);
+    border: 1px solid var(--normal-gray-color);
+    padding: 15px !important;
+}
+
+.testinomial-section .card{
+    max-width: 360px !important;
+    min-height: 400px !important;
+    height: 100% !important;
+}
+
+/* footer */
+footer{
+    max-width: 1300px !important;
+}
+.footer .contact-details .icon{
+    font-size: 10px !important;
+    height: 16px !important;
+    width: 16px !important;
+    background-color: var(--dark-gray-color);
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .listing img{
+    height: 40px !important;
+}
+.footer .footer-social-icon{
+    height: 45px !important;
+    width: 45px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .footer-social-icon:hover{
+    border-color: var(--primary-color) !important;
+    color: var(--primary-color) !important;
+    transition: color 0.15s ease, border 0.15s ease;
+}
+.last-footer p{
+    background-color: rgba(0, 0, 0, 0.27);
+}
+
+
+/* animations */
+@keyframes scale-up {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
