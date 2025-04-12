@@ -120,7 +120,7 @@ export default function Footer() {
                             <div
                                 className="mt-lg-5 pt-3 d-flex justify-content-center justify-content-lg-start flex-wrap text-white gap-2">
                                 <a href="#" className="footer-social-icon text-white border border-secondary rounded-circle">
-                                    <i className="fa-brands fa-facebook-f  m-0 p-0"></i></a>
+                                    <i className="fa-brands fa-facebook-f"></i></a>
                                 <a href="#" className="footer-social-icon text-white border border-secondary rounded-circle"><i
                                     className="fa-brands fa-x-twitter"></i></a>
                                 <a href="#" className="footer-social-icon text-white border border-secondary rounded-circle"><i

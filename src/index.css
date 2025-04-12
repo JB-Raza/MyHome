@@ -485,7 +485,7 @@ footer{
     transition: color 0.15s ease, border 0.15s ease;
 }
 .footer-social-icon i{
-    line-height: 1px;
+    line-height: 12px;
 }
 .last-footer p{
     background-color: rgba(0, 0, 0, 0.27);
