@@ -6,7 +6,7 @@ export default function App() {
 
   return (
     <div className='overflow-hidden'>
-      {/* navbar */}
+      {/* navbar */} 
       <Navbar />
 
       {/* hero carousel container */}
