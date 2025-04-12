@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary p-0">
-            <div className="container-fluid p-0 h-100">
+        <nav className="navbar navbar-expand-lg bg-body-tertiary p-0 overflow-hidden">
+            <div className="container-fluid p-0">
                 {/* logo */}
                 <a href="./index.html" className="navbar-brand ms-3 my-3 me-5 ms-md-0 text-md-center">
                     <img className="img-fluid w-75" src="logo.png" alt="Logo" />
@@ -17,7 +17,7 @@ export default function Navbar() {
                 </button>
 
                 {/* offcanvas */}
-                <div className="offcanvas nav-offcanvas w-25 offcanvas-start" tabIndex="-1" id="offcanvasNavbar"
+                <div className="offcanvas nav-offcanvas offcanvas-start" tabIndex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div className="offcanvas-header bg-light-gray">
                         <button className="btn bg-primary text-white fw-semibold px-4 py-2 rounded-0" type="button">
