@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, memo } from 'react'
+import React, { memo } from 'react'
 
 
 // listing card
