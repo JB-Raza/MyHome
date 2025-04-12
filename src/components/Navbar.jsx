@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary p-0 overflow-hidden">
+        <nav className="navbar navbar-expand-lg bg-body-tertiary p-0">
             <div className="container-fluid p-0">
                 {/* logo */}
                 <a href="./index.html" className="navbar-brand ms-3 my-3 me-5 ms-md-0 text-md-center">

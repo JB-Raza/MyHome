@@ -5,7 +5,7 @@ import './selectStyle.css'
 export default function App() {
 
   return (
-    <div>
+    <div className='overflow-hidden'>
       {/* navbar */}
       <Navbar />
 
