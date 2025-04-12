@@ -35,9 +35,10 @@ export default function Testinomial() {
                         journey. Your satisfaction is our success.</p>
 
                     {/* listing navigation btns */}
-                    <div className="d-flex gap-2 mt-4 text-center text-md-start ">
+                    <div className="d-flex justify-content-center justify-content-md-start gap-2 mt-4">
 
                         <button
+                        aria-label='slide prev'
                             onClick={slidePrev}
                             disabled={isBeginning == true ? true : false}
                             className={`btn swiper-btn ms-1 border-0 rounded-0 ${isBeginning == true ? "swiper-button-disabled" : ""}`}>
@@ -45,6 +46,7 @@ export default function Testinomial() {
                         </button>
 
                         <button
+                        aria-label='slide next'
                             onClick={slideNext}
                             disabled={isEnd}
                             className={`btn swiper-btn rounded-0  ${isEnd ? "swiper-button-disabled" : ""}`}>
@@ -54,14 +56,19 @@ export default function Testinomial() {
                 </div>
 
                 {/* cards row col-2 */}
-                <div className="col col-12 col-md-7 p-0 my-4 me-0 overflow-hidden">
+                <div className="col col-12 col-md-7 p-0 my-4 me-0 ">
                     <Swiper
                         ref={swiperRef}
-                        slidesPerView={2}
+                        slidesPerView={1}
                         spaceBetween={30}
                         onSlideChange={(swiper) => {
                             setIsEnd(swiper.isEnd)
                             setIsBeginning(swiper.isBeginning)
+                        }}
+                        breakpoints={{
+                            990: { slidesPerView: 2 },
+                            768: { slidesPerView: 1 },
+                            600: { slidesPerView: 2 },
                         }}
                         className='d-flex align-items-center'
                     >

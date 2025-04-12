@@ -130,16 +130,25 @@
         overflow: hidden !important;
         min-height: max-content;
     }
-}
-
-@media screen and (max-width: 490px) {
-    .carousel-container {
-        overflow: hidden !important;
-
-        height: 120vh !important;
+    .hero-heading{
+        font-size: 35px !important;
+    }
+    .our-stats h1 {
+        width: 100px !important;
+    }
+    .our-stats h5{
+        width: 200px !important;
+        text-align: start;
+        display: flex;
+        align-items: center;
     }
 }
-
+.our-stats h5{
+    width: 200px !important;
+    text-align: start;
+    display: flex;
+    align-items: center;
+}
 /* for stats on contact form */
 @media (min-width: 576px) {
     .w-sm-100 {
@@ -169,6 +178,8 @@
 
 
 
+
+
 /* other */
 .regular-btn {
     padding: 13px 30px !important;
@@ -176,4 +187,8 @@
 
 .regular-btn:hover {
     opacity: 0.85;
+}
+
+.scrollbar-hidden::-webkit-scrollbar{
+    display: none;
 }

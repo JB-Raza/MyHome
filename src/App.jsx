@@ -5,7 +5,7 @@ import './selectStyle.css'
 export default function App() {
 
   return (
-    <div className='overflow-hidden'>
+    <div >
       {/* navbar */}
       <Navbar />
 
@@ -19,8 +19,10 @@ export default function App() {
         <ListingRow rowIndex={1} />
 
       </div>
-      <button className="btn bg-primary fw-semibold d-md-none regular-btn px-3 py-2 text-white rounded-0">View
+      <div className="text-center d-md-none">
+      <button className="btn bg-primary fw-semibold regular-btn px-3 py-2 text-white rounded-0">View
         all</button>
+      </div>
 
       {/* contact form */}
       <ContactForm />

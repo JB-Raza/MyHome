@@ -3,7 +3,7 @@ import React from 'react'
 export default function ContactForm() {
   return (
     <section className="contact-us-section container-fluid p-0 my-5 ">
-        <div className="row h-100 m-0 d-flex flex-column flex-md-row align-items-center gap-5 justify-content-between">
+        <div className="row mx-5 h-100 m-0 d-flex flex-column flex-md-row align-items-center gap-5 justify-content-between">
             {/* col 1 */}
             <div
                 className="col col-11 col-md-5 d-flex flex-column justify-content-center text-center text-md-start gap-4 h-100">
@@ -14,21 +14,21 @@ export default function ContactForm() {
                     Let's make your real estate journey seamless and enjoyable.</p>
 
                 {/* stats */}
-                <div className="row g-4 w-50 w-sm-100 mx-auto mx-sm-0 p-0">
+                <div className="row g-4 w-50 w-sm-100 mx-auto mx-md-0 our-stats p-0">
                     <span className="col col-12 col-sm-6 d-flex gap-2 text-white p-0">
-                        <h1 className="fs-1 m-0 text-white">100+</h1>
+                        <h1 className="fs-1 m-0 text-white text-end">100+</h1>
                         <h5 className="fs-6 fw-semibold m-0 border-left-primary py-2 ps-2">Happy Clients</h5>
                     </span>
                     <span className="col col-12 col-sm-6 d-flex gap-2 text-white p-0">
-                        <h1 className="fs-1 m-0 text-white">50+</h1>
+                        <h1 className="fs-1 m-0 text-white text-end">50+</h1>
                         <h5 className="fs-6 fw-semibold m-0 border-left-primary py-2 ps-2">5-star reviews</h5>
                     </span>
                     <span className="col col-12 col-sm-6 d-flex gap-2 text-white p-0">
-                        <h1 className="fs-1 m-0 text-white">200+</h1>
+                        <h1 className="fs-1 m-0 text-white text-end" >200+</h1>
                         <h5 className="fs-6 fw-semibold m-0 border-left-primary py-2 ps-2">Successful sales</h5>
                     </span>
                     <span className="col col-12 col-sm-6 d-flex gap-2 text-white p-0">
-                        <h1 className="fs-1 m-0 text-white">10+</h1>
+                        <h1 className="fs-1 m-0 text-white text-end">10+</h1>
                         <h5 className="fs-6 fw-semibold m-0 border-left-primary py-2 ps-2">Years of experience</h5>
                     </span>
                 </div>

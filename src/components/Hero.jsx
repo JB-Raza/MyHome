@@ -24,13 +24,13 @@ export default function Hero() {
                 data-bs-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active" data-bs-interval="5000">
-                        <img src="bg-imgs/bg-top-1.jpeg" className="d-block h-100 w-100" alt="..." />
+                        <img  loading='lazy'  src="bg-imgs/bg-top-1.jpeg" className="d-block h-100 w-100" alt="..." />
                     </div>
                     <div className="carousel-item" data-bs-interval="5000">
-                        <img src="bg-imgs/bg-top-2.jpeg" className="d-block h-100 w-100" alt="..." />
+                        <img  loading='lazy'  src="bg-imgs/bg-top-2.jpeg" className="d-block h-100 w-100" alt="..." />
                     </div>
                     <div className="carousel-item" data-bs-interval="5000">
-                        <img src="bg-imgs/bg-top-3.jpeg" className="d-block h-100 w-100" alt="..." />
+                        <img  loading='lazy'  src="bg-imgs/bg-top-3.jpeg" className="d-block h-100 w-100" alt="..." />
                     </div>
                 </div>
             </div>
@@ -38,7 +38,7 @@ export default function Hero() {
             {/* carousel data */}
             <div className="carousel-data-overlay d-flex align-items-center justify-content-center">
                 <div className="w-75 text-white d-flex flex-column gap-4 text-center">
-                    <h1 className="fw-bold">Find Your Perfect Home</h1>
+                    <h1 className="fw-bold hero-heading">Find Your Perfect Home</h1>
                     <p className="fs-5 fw-normal">Discover a place you'll love to call home - search through a wide range of
                         properties
                         tailored to your needs

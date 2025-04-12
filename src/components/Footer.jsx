@@ -11,7 +11,7 @@ export default function Footer() {
                         <div className="col col-12 col-sm-8 col-md-4 mx-auto mx-md-0">
                             {/* logo */}
                             <div className="logo h-25 mb-3 text-center text-md-start">
-                                <img src="logo-light-90.png" alt="MyHome" className="img-fluid h-75" />
+                                <img  loading='lazy'  src="logo-light-90.png" alt="MyHome" className="img-fluid h-75" />
                             </div>
                             <p className=" color-light-normal-gray text-center text-md-start normal-text lh-lg pe-4">Discover leading
                                 properties and secure your dream home with us. Expert guidance and support at every step.</p>
@@ -76,7 +76,7 @@ export default function Footer() {
                             <div className="mt-sm-5 pt-3 d-flex flex-column align-items-center align-items-sm-start gap-3 ">
                                 {/* listing 1 */}
                                 <div className="listing d-flex flex-column flex-sm-row align-items-center align-items-sm-start gap-3">
-                                    <img src="listingcards/1.jpg" alt="1" className="img-fluid" />
+                                    <img  loading='lazy'  src="listingcards/1.jpg" alt="1" className="img-fluid" />
                                     <span className="text-white">
                                         <h6 className="fw-normal m-0 text-center text-sm-start">Minimalist style flat</h6>
                                         <p className="price m-0 small-text text-light-normal-gray text-center text-sm-start">$ 1,800,000
@@ -85,7 +85,7 @@ export default function Footer() {
                                 </div>
                                 {/* listing 2 */}
                                 <div className="listing d-flex flex-column flex-sm-row align-items-center align-items-sm-start gap-3">
-                                    <img src="listingcards/2.jpg" alt="1" className="img-fluid" />
+                                    <img  loading='lazy'  src="listingcards/2.jpg" alt="1" className="img-fluid" />
                                     <span className="text-white">
                                         <h6 className="fw-normal m-0 text-center text-sm-start">Modern two bedroom apartment</h6>
                                         <p className="price m-0 small-text text-light-normal-gray text-center text-sm-start">$ 1,500
@@ -94,7 +94,7 @@ export default function Footer() {
                                 </div>
                                 {/* listing 3 */}
                                 <div className="listing d-flex flex-column flex-sm-row align-items-center align-items-sm-start gap-3">
-                                    <img src="listingcards/3.jpg" alt="3" className="img-fluid" />
+                                    <img  loading='lazy'  src="listingcards/3.jpg" alt="3" className="img-fluid" />
                                     <span className="text-white">
                                         <h6 className="fw-normal m-0 text-center text-sm-start">Quaint Timber Cottage</h6>
                                         <p className="price m-0 small-text text-light-normal-gray text-center text-sm-start">$ 5,000
@@ -103,7 +103,7 @@ export default function Footer() {
                                 </div>
                                 {/* listing 4 */}
                                 <div className="listing d-flex flex-column flex-sm-row align-items-center align-items-sm-start gap-3">
-                                    <img src="listingcards/4.jpg" alt="4" className="img-fluid" />
+                                    <img  loading='lazy'  src="listingcards/4.jpg" alt="4" className="img-fluid" />
                                     <span className="text-white">
                                         <h6 className="fw-normal m-0 text-center text-sm-start">Bright Office</h6>
                                         <p className="price m-0 small-text text-light-normal-gray text-center text-sm-start">$ 1,800,000

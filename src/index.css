@@ -22,6 +22,10 @@
     box-sizing: border-box;
 }
 
+.navbar-brand img{
+    aspect-ratio: 250/90;
+    max-width: 170px !important;
+}
 body {
     background-color: #f7f8fa;
 }
@@ -215,6 +219,7 @@ a{
     right: 0;
     z-index: 1;
     height: 100%;
+    max-width: 100% !important;
 }
 
 .carousel-hero .carousel-inner {
@@ -223,7 +228,7 @@ a{
 }
 
 .carousel-container .carousel-data-overlay h1 {
-    font-size: 48px !important;
+    font-size: 48px ;
 }
 
 .carousel-container .carousel-data-overlay p {
@@ -453,10 +458,10 @@ footer{
     height: 16px !important;
     width: 16px !important;
     background-color: var(--dark-gray-color);
-    padding: 8px;
+    padding: 10px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center !important;
+    justify-content: center !important;
 }
 .footer .listing img{
     height: 40px !important;

@@ -5,8 +5,8 @@ export default function Navbar() {
         <nav className="navbar navbar-expand-lg bg-body-tertiary p-0">
             <div className="container-fluid p-0 h-100">
                 {/* logo */}
-                <a href="./index.html" className="navbar-brand ms-3 ms-md-0 text-md-center m-0">
-                    <img className="img-fluid w-50" src="logo.png" alt="Logo" />
+                <a href="./index.html" className="navbar-brand ms-3 my-3 me-5 ms-md-0 text-md-center">
+                    <img className="img-fluid w-75" src="logo.png" alt="Logo" />
                 </a>
 
                 {/* toggler btn */}
@@ -21,7 +21,7 @@ export default function Navbar() {
                     aria-labelledby="offcanvasNavbarLabel">
                     <div className="offcanvas-header bg-light-gray">
                         <button className="btn bg-primary text-white fw-semibold px-4 py-2 rounded-0" type="button">
-                            <span>Get In Touch</span>
+                            Get In Touch
                         </button>
                         <button type="button" className="btn-close p-3 rounded-circle border" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>

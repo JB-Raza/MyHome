@@ -3,13 +3,6 @@ import React, { useEffect, useRef, memo } from 'react'
 
 // listing card
 export const ListingCard = memo(({ listing }) => {
-    const renderCount = useRef(0)
-
-    renderCount.current++
-
-    useEffect(() => {
-        console.log("card re rendered = ", renderCount.current)
-    })
 
     return (
         <div className="card border-0 bg-white p-0 rounded-0">
@@ -26,19 +19,19 @@ export const ListingCard = memo(({ listing }) => {
                     {/* listings images */}
                     {listing.images && listing.images.map((image, index) => (
                         <div key={index} className={`carousel-item ${index == 0 ? "active" : ""}`}>
-                            <img src={image} className="d-block w-100" alt="..." />
+                            <img  loading='lazy' src={image} className="d-block w-100" alt="..." />
                         </div>
                     ))}
                 </div>
                 {/* carousel control btns */}
                 <button className="carousel-control-prev card-carousel-control-btn" type="button"
-                    data-bs-target={`#${listing.id}`} data-bs-slide="prev">
+                    data-bs-target={`#${listing.id}`} data-bs-slide="prev" aria-label='slide-prev'>
                     <span className="text-dark p-3 d-flex align-content-center justify-content-center"
                         aria-hidden="true"><i className="fa-solid fa-angle-left"></i></span>
                     <span className="visually-hidden">Previous</span>
                 </button>
                 <button className="carousel-control-next card-carousel-control-btn" type="button"
-                    data-bs-target={`#${listing.id}`} data-bs-slide="next">
+                    data-bs-target={`#${listing.id}`} data-bs-slide="next" aria-label='slide-next'>
                     <span className="text-dark p-3 d-flex align-content-center justify-content-center"
                         aria-hidden="true"><i className="fa-solid fa-angle-right"></i></span>
                     <span className="visually-hidden">Next</span>
@@ -86,7 +79,7 @@ export const ListingCard = memo(({ listing }) => {
             {/* card footer */}
             <div className="card-footer bg-white d-flex justify-content-between align-items-center">
                 <span className="listing-owner d-flex gap-2">
-                    <img src={listing.ownerAvatar} className="img-fluid avatar-img rounded-circle"
+                    <img  loading='lazy' src={listing.ownerAvatar} className="img-fluid avatar-img rounded-circle"
                         alt="1" />
                     <span className="extra-sm-text fw-semibold">{listing.listingOwner}</span>
                 </span>
@@ -107,7 +100,7 @@ export const AdvisorCard = ({ advisor }) => {
         <div className="col col-12 col-md-6 col-lg-3 p-2">
             <div className="card advisor-card rounded-0 border-0 overflow-hidden">
                 <div className="advisor-avatar overflow-hidden">
-                    <img src={`${advisor.avatar}`} alt="Sofia Nail - Customer Advisor"
+                    <img  loading='lazy' src={`${advisor.avatar}`} alt="Sofia Nail - Customer Advisor"
                         className="card-img img-fluid rounded-0" />
                 </div>
                 <div className="card-body text-center my-3 d-flex flex-column gap-1">
@@ -139,7 +132,7 @@ export const FeaturedAreaCard = ({ area }) => {
     return (
         <div className="col col-12 col-md-6 col-lg-4">
             <div className="card text-bg-dark rounded-0 p-0 m-0 border-0 overflow-hidden h-100">
-                <img src={area.image} className="card-img rounded-0 h-100" alt="manhatton" />
+                <img  loading='lazy'  src={area.image} className="card-img rounded-0 h-100" alt="manhatton" />
                 <div className="card-img-overlay area-card-overlay d-flex flex-column justify-content-end p-4">
                     <h5 className="card-title fs-4">{area.title}</h5>
                     <p className="card-text opacity-75 fw-semibold">{area.quantity} Listings</p>
@@ -152,9 +145,8 @@ export const FeaturedAreaCard = ({ area }) => {
 
 // testinomial card
 export const TestinomialCard = ({review}) => {
-    // ownerAvatar, owner, title, description
     return (
-        <div className="card h-auto border-0 d-flex flex-column bg-white p-0 rounded-0">
+        <div className="card mx-auto h-auto border-0 d-flex flex-column bg-white p-0 rounded-0">
             {/* body */}
             <div className="card-body p-5">
                 <h6 className="card-title color-dark-blue-gray fs-5 fw-bold">{review.title}</h6>
@@ -171,7 +163,7 @@ export const TestinomialCard = ({review}) => {
             {/* card footer */}
             <div className="card-footer bg-white d-flex justify-content-around py-2">
                 <div className="d-flex gap-2">
-                    <img src={review.ownerAvatar} className="img-fluid avatar-img rounded-circle"
+                    <img  loading='lazy'  src={review.ownerAvatar} className="img-fluid avatar-img rounded-circle"
                         alt="1" />
                     <span>
                         <span className="small-text color-dark-blue-gray fw-semibold m-0">{review.owner}</span>
