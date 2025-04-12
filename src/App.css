@@ -3,8 +3,8 @@
     border: 2px solid var(--primary-color) !important;
 }
 
-.border-left-primary {
-    border-left: 3px solid var(--primary-color) !important;
+.border-right-primary {
+    border-right: 3px solid var(--primary-color) !important;
 }
 
 .border-top-primary {
@@ -133,22 +133,8 @@
     .hero-heading{
         font-size: 35px !important;
     }
-    .our-stats h1 {
-        width: 100px !important;
-    }
-    .our-stats h5{
-        width: 200px !important;
-        text-align: start;
-        display: flex;
-        align-items: center;
-    }
 }
-.our-stats h5{
-    width: 200px !important;
-    text-align: start;
-    display: flex;
-    align-items: center;
-}
+
 /* for stats on contact form */
 @media (min-width: 576px) {
     .w-sm-100 {
@@ -165,20 +151,8 @@
 
     .useful-links .nav .nav-item:last-child {
         border-bottom: 2px dashed var(--dark-gray-color) !important;
-
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* other */
 .regular-btn {

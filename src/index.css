@@ -290,7 +290,10 @@ a{
     width: 32px;
     transition: color 0.15s ease-in, border 0.15s ease-in;
     z-index: 10;
+    line-height: 10px !important;
 }
+
+
 .card-icon:hover {
     color: var(--primary-color) !important;
     border-color:var(--primary-color) !important;
@@ -410,7 +413,6 @@ textarea {
 .listing-controls .filter-btns button:not(.active-filter-btn):hover {
     color: var(--primary-color) !important;
     background-color: var(--light-gray-color);
-
 }
 
 .active-filter-btn {
@@ -439,8 +441,12 @@ textarea {
 
 .testinomial-section .appostrophy-icon {
     transform: translateY(-65%);
+    height: 60px;
+    width: 60px;
     border: 1px solid var(--normal-gray-color);
-    padding: 15px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .testinomial-section .card{
@@ -477,6 +483,9 @@ footer{
     border-color: var(--primary-color) !important;
     color: var(--primary-color) !important;
     transition: color 0.15s ease, border 0.15s ease;
+}
+.footer-social-icon i{
+    line-height: 1px;
 }
 .last-footer p{
     background-color: rgba(0, 0, 0, 0.27);

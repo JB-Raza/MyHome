@@ -19,7 +19,7 @@ export const ListingCard = memo(({ listing }) => {
                     {/* listings images */}
                     {listing.images && listing.images.map((image, index) => (
                         <div key={index} className={`carousel-item ${index == 0 ? "active" : ""}`}>
-                            <img  loading='lazy' src={image} className="d-block w-100" alt="..." />
+                            <img loading='lazy' src={image} className="d-block w-100" alt="..." />
                         </div>
                     ))}
                 </div>
@@ -58,7 +58,7 @@ export const ListingCard = memo(({ listing }) => {
                     </span>
                 </p>
                 {/* price */}
-                <p className="card-text color-primary fw-bold big-normal-text">$ {listing.price} {listing.rentOrSale == "For Rent"? " /month":""}</p>
+                <p className="card-text color-primary fw-bold big-normal-text">$ {listing.price} {listing.rentOrSale == "For Rent" ? " /month" : ""}</p>
 
                 {/* beds and baths info */}
                 <section className="d-flex gap-1 text-white">
@@ -79,7 +79,7 @@ export const ListingCard = memo(({ listing }) => {
             {/* card footer */}
             <div className="card-footer bg-white d-flex justify-content-between align-items-center">
                 <span className="listing-owner d-flex gap-2">
-                    <img  loading='lazy' src={listing.ownerAvatar} className="img-fluid avatar-img rounded-circle"
+                    <img loading='lazy' src={listing.ownerAvatar} className="img-fluid avatar-img rounded-circle"
                         alt="1" />
                     <span className="extra-sm-text fw-semibold">{listing.listingOwner}</span>
                 </span>
@@ -95,12 +95,11 @@ export const ListingCard = memo(({ listing }) => {
 
 // advisor card
 export const AdvisorCard = ({ advisor }) => {
-    // name, postion, email, phone, avatar
     return (
         <div className="col col-12 col-md-6 col-lg-3 p-2">
             <div className="card advisor-card rounded-0 border-0 overflow-hidden">
                 <div className="advisor-avatar overflow-hidden">
-                    <img  loading='lazy' src={`${advisor.avatar}`} alt="Sofia Nail - Customer Advisor"
+                    <img loading='lazy' src={`${advisor.avatar}`} alt="Sofia Nail - Customer Advisor"
                         className="card-img img-fluid rounded-0" />
                 </div>
                 <div className="card-body text-center my-3 d-flex flex-column gap-1">
@@ -110,14 +109,17 @@ export const AdvisorCard = ({ advisor }) => {
                     <p className="contact-num small-text m-0">{advisor.phone}</p>
                     {/* social links */}
                     <div className="advisor-social-links mt-3 d-flex justify-content-center gap-2">
-                        <a href="#" className="card-icon" aria-label="Facebook"><i
-                            className="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" className="card-icon" aria-label="Twitter"><i
-                            className="fa-brands fa-x-twitter"></i></a>
-                        <a href="#" className="card-icon" aria-label="Instagram"><i
-                            className="fa-brands fa-instagram"></i></a>
+                        <a href="#" className="card-icon" aria-label="Facebook">
+                            <i className="fa-brands fa-facebook-f line-height-1 lh-lg m-0 p-0"></i>
+                        </a>
+                        <a href="#" className="card-icon" aria-label="Twitter">
+                            <i className="fa-brands fa-x-twitter m-0 p-0 lh-lg"></i>
+                        </a>
+                        <a href="#" className="card-icon" aria-label="Instagram">
+                            <i className="fa-brands fa-instagram lh-lg"></i>
+                        </a>
                         <a href="#" className="card-icon" aria-label="Youtube">
-                            <i className="fa-brands fa-youtube"></i>
+                            <i className="fa-brands fa-youtube lh-lg"></i>
                         </a>
                     </div>
                 </div>
@@ -132,7 +134,7 @@ export const FeaturedAreaCard = ({ area }) => {
     return (
         <div className="col col-12 col-md-6 col-lg-4">
             <div className="card text-bg-dark rounded-0 p-0 m-0 border-0 overflow-hidden h-100">
-                <img  loading='lazy'  src={area.image} className="card-img rounded-0 h-100" alt="manhatton" />
+                <img loading='lazy' src={area.image} className="card-img rounded-0 h-100" alt="manhatton" />
                 <div className="card-img-overlay area-card-overlay d-flex flex-column justify-content-end p-4">
                     <h5 className="card-title fs-4">{area.title}</h5>
                     <p className="card-text opacity-75 fw-semibold">{area.quantity} Listings</p>
@@ -144,7 +146,7 @@ export const FeaturedAreaCard = ({ area }) => {
 
 
 // testinomial card
-export const TestinomialCard = ({review}) => {
+export const TestinomialCard = ({ review }) => {
     return (
         <div className="card mx-auto h-auto border-0 d-flex flex-column bg-white p-0 rounded-0">
             {/* body */}
@@ -163,7 +165,7 @@ export const TestinomialCard = ({review}) => {
             {/* card footer */}
             <div className="card-footer bg-white d-flex justify-content-around py-2">
                 <div className="d-flex gap-2">
-                    <img  loading='lazy'  src={review.ownerAvatar} className="img-fluid avatar-img rounded-circle"
+                    <img loading='lazy' src={review.ownerAvatar} className="img-fluid avatar-img rounded-circle"
                         alt="1" />
                     <span>
                         <span className="small-text color-dark-blue-gray fw-semibold m-0">{review.owner}</span>

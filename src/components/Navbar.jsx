@@ -73,11 +73,10 @@ export default function Navbar() {
                         </ul>
                         {/* btns */}
                         <div className="nav-action-btns d-none d-lg-flex gap-2 me-5">
-                            <button
-                                className="btn color-primary border-primary fw-semibold d-flex gap-3 justify-content-center align-items-center border-2 rounded-0"
+                            <button className="btn color-primary fw-semibold d-flex border-primary justify-content-center align-items-center rounded-0"
                                 type="button">
                                 <i className="fs-6 fa-solid fa-phone"></i>
-                                <span className="fs-6">(123) 345-6789</span>
+                                <span style={{fontSize: "15px"}}>(123) 345-6789</span>
                             </button>
                             <button
                                 className="btn fs-6 bg-primary text-white fw-semibold d-flex gap-3 justify-content-center align-items-center rounded-0"

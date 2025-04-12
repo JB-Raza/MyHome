@@ -49,9 +49,9 @@ export default function Hero() {
                     <div className="container search-listing-section mt-3">
                         {/* btns */}
                         <div className="d-flex gap-1 justify-content-center align-items-end">
-                                <button onClick={() => handleActiveBtn("All")} className={`btn bg-white text-dark border-0 rounded-0 filter-btn ${activeBtn == "All"? "active-btn": ""}`}>All</button>
-                                <button onClick={() => handleActiveBtn("For Sale")} className={`btn bg-white text-dark border-0 rounded-0 filter-btn ${activeBtn == "For Sale"? "active-btn": ""}`}>For Sale</button>
-                                <button onClick={() => handleActiveBtn("For Rent")} className={`btn bg-white text-dark border-0 rounded-0 filter-btn ${activeBtn == "For Rent"? "active-btn": ""}`}>For Rent</button>
+                                <button onClick={() => handleActiveBtn("All")} className={`btn bg-white text-dark border-0 rounded-0 text-nowrap filter-btn ${activeBtn == "All"? "active-btn": ""}`}>All</button>
+                                <button onClick={() => handleActiveBtn("For Sale")} className={`btn bg-white text-dark border-0 text-nowrap rounded-0 filter-btn ${activeBtn == "For Sale"? "active-btn": ""}`}>For Sale</button>
+                                <button onClick={() => handleActiveBtn("For Rent")} className={`btn bg-white text-dark border-0 text-nowrap rounded-0 filter-btn ${activeBtn == "For Rent"? "active-btn": ""}`}>For Rent</button>
                             </div>
                         {/* search listing form */}
                         <form action="./index.html"
